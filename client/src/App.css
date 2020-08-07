@@ -1,0 +1,295 @@
+.App {
+  text-align: center;
+}
+
+.body {
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  height:100%;
+  background-color:grey
+
+}
+
+.login-div {
+  /* background-color:grey; */
+  background-image: url('./images/morgan-vander-hart-KbqtnJ9a-9M-unsplash.jpg');
+  background-size:cover;
+  background-repeat:no-repeat;
+  /* background-position:center; */
+  width:100%;
+  height:100vh;
+}
+
+.overlay {
+  background-color: rgba(0,0,0,0.45);
+  width:100%;
+  height:100%;
+}
+.login-div img {
+  margin-top:15vh;
+  align-content: center;;
+
+}
+
+#img-holder {
+  text-align:center
+}
+
+.login-form {
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  height:50vh;
+}
+
+#lower {
+  display: flex;
+  flex-direction:column;
+  padding:5px;
+  align-items:center;
+  justify-content:space-evenly;
+  width:100%
+}
+
+.input {
+  margin: 10px;
+  background-color:rgba(0,0,0,0.65);
+  color:white;
+  font-weight:bold;
+  border:none;
+  height:25px;
+}
+
+#signup-p {
+  color:white;
+  font-size: 16px;
+  font-weight:bold;
+  text-decoration: none;
+}
+
+#signup-p span {
+  padding-left:9px;
+  text-decoration: none 
+}
+
+#signup-p span:hover {
+  color:blue;
+  cursor:pointer;
+  text-decoration: none;
+}
+.signup-link {
+  text-decoration:none
+}
+
+#button-login {
+  border-radius:30px;
+  width: 80px;
+  height: 30px;
+  font-size: 14px;
+  font-weight:bold;
+  color: #fff;
+  background-color: #18577ca8;
+  border: none;
+  cursor: pointer
+}
+
+#button-login:hover {
+  background-color: #051118a8;
+}
+.mobile-nav-div {
+  background-color: tomato;
+  height:30vh;
+  width:100%;
+}
+
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 10vh;
+  justify-content:flex-end;
+  padding-top:30px;
+}
+
+#logo-holder {
+  text-align:center;
+  height: 5vh;
+  width: 100%;
+}
+
+#logo-holder img {
+  width: 100px;
+}
+.mobile-nav-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 30px;
+  min-width: 75px;
+  padding: 8px 0;
+  z-index: 2;
+}
+
+.mobile-nav-button:hover {
+  cursor:pointer;
+}
+
+.mobile-nav-button span {
+  height: 5px;
+  width: 50px;
+  border-radius: 1px;
+  background-color: white;
+}
+
+.navItemsMobile {
+  height: 100%;
+  width: 100%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0;
+}
+
+.navItemsMobile img {
+  width: 120px;
+  margin-bottom: -50px
+}
+
+.mobileNavList {
+  color: white;
+  font-weight: 1000;
+  font-size: 36px;
+  margin-top:-20px;
+  text-decoration: none;
+}
+
+.signup-div {
+  /* background-color:grey; */
+  background-image: url('./images/signup.jpg');
+  background-size:cover;
+  background-repeat:no-repeat;
+  /* background-position:center; */
+  width:100%;
+  height:120vh;
+}
+
+.signup-form {
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  height:75vh;
+}
+
+
+.pin {
+  width: 30px;
+  height: 30px;
+  border-radius: 50% 50% 50% 0;
+  background: #00cae9;
+  position: absolute;
+  transform: rotate(-45deg);
+  left: 50%;
+  top: 50%;
+  margin: -20px 0 0 -20px;
+}
+.pin:after {
+  content: "";
+  width: 14px;
+  height: 14px;
+  margin: 8px 0 0 8px;
+  background: #e6e6e6;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.bounce {
+  animation-name: bounce;
+  animation-fill-mode: both;
+  animation-duration: 1s;
+}
+
+.pulse {
+  background: #d6d4d4;
+  border-radius: 50%;
+  height: 14px;
+  width: 14px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: 11px 0px 0px -12px;
+  transform: rotateX(55deg);
+  z-index: -2;
+}
+.pulse:after {
+  content: "";
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  margin: -13px 0 0 -13px;
+  animation: pulsate 1s ease-out;
+  animation-iteration-count: infinite;
+  opacity: 0;
+  box-shadow: 0 0 1px 2px #00cae9;
+  animation-delay: 1.1s;
+}
+
+.home-container-div {
+  background-color: tomato;
+  box-sizing: border-box
+}
+
+.card {
+  width:100%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  padding: 20px 20px;
+  box-sizing:border-box
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2)
+}
+.card img {
+  max-width:100%;
+}
+.spot-container {
+  padding: 2px 16px;
+}
+@media (min-width:768px) {
+  .mobile-nav-div {
+    height: 30vh;
+  }
+  .login-div {
+    /* background-color:grey; */
+    background-size:cover;
+    background-position:bottom 20% right 0%;
+    /* background-repeat:no-repeat; */
+    
+  }
+
+.signup-div {
+  /* background-color:grey; */
+  background-size:cover;
+  background-position:bottom 20% right 0%;
+  /* background-repeat:no-repeat; */
+  
+}
+}
+
+@media (min-width:960px) {
+  .login-div {
+    background-image: url('./images/signup.jpg');
+    background-position:center
+  }
+
+  .signup-div {
+    background-image: url('./images/signup.jpg');
+    background-position:center
+  }
+}
